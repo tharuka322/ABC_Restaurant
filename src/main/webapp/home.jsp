@@ -42,7 +42,7 @@
                 <a href="menu.jsp" class="nav-item nav-link">Menu</a>
                  <a href="login.jsp" class="nav-item nav-link">Booking</a>
                 <a href="contact.jsp" class="nav-item nav-link">Contact</a>
-                <a href="admin_login.jsp" class="nav-item nav-link">Sign In</a>
+                <a href="login.jsp" class="nav-item nav-link">Sign In</a>
             </div>
         </div>
     </nav>

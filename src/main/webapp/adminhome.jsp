@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -35,13 +35,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="admin_home.jsp">Home</a>
+                    <a class="nav-link active" href="adminhome.jsp">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin_staff.jsp">Staff</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin_menu.jsp">Menu</a>
+                    <a class="nav-link" href="add_menu.jsp">Menu</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="view_booking.jsp">Booking</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin_faq.jsp">FAQ</a>

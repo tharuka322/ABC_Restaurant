@@ -26,21 +26,26 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
-            // Validate user credentials
-            Logins.User user = loginDAO.validateUser(email, password);
-            if (user != null) {
-                // Create a session and set user attributes
-                HttpSession session = request.getSession();
-                session.setAttribute("user", user);
-                session.setAttribute("userName", user.getName()); 
-
-                // Redirect to the welcome page
-                response.sendRedirect("welcome.jsp");
+            // Check if the username and password for 'admin staff login'
+            if ("admin@gmail.com".equals(email) && "admin".equals(password)) {
+                // Redirect to admin staff login
+                response.sendRedirect("admin_staff_login.jsp");
             } else {
-                // Invalid login attempt, set error message
-                request.setAttribute("errorMessage", "Invalid email or password.");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-                dispatcher.forward(request, response);
+         
+                Logins.User user = loginDAO.validateUser(email, password);
+                if (user != null) {
+                 
+                    HttpSession session = request.getSession();
+                    session.setAttribute("user", user);
+                    session.setAttribute("userName", user.getName());
+
+                    response.sendRedirect("welcome.jsp");
+                } else {
+       
+                    request.setAttribute("errorMessage", "Invalid email or password.");
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+                    dispatcher.forward(request, response);
+                }
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -53,4 +58,3 @@ public class LoginServlet extends HttpServlet {
         response.sendRedirect("login.jsp");
     }
 }
-

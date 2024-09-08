@@ -1,4 +1,11 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,53 +65,35 @@
     </div>
 </nav>
 <body>
-  
-
-    <div class="container my-5">
-        <h2 class="text-center mb-4">Manage Staff</h2>
-        <form action="StaffServlet" method="post">
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
-                        <label for="username">Username</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-                        <label for="password">Password</label>
-                    </div>
-                </div>
+    <div class="container mt-5">
+        <h2>Add Menu Item</h2>
+        <form action="AddMenuServlet" method="post">
+            <div class="form-group">
+                <label for="name">Menu Item Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
-                        <label for="phone">Phone Number</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                        <label for="name">Name</label>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" class="form-control" id="price" name="price" step="0.01" required>
             </div>
-            <div class="row mb-3">
-                <div class="col-md-12">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="role" name="role" placeholder="Role" required>
-                        <label for="role">Role</label>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select class="form-control" id="category" name="category">
+                    <option value="Appetizer">Appetizer</option>
+                    <option value="Main Course">Main Course</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Beverage">Beverage</option>
+                </select>
             </div>
-            <button type="submit" class="btn btn-primary">Add Staff</button>
-            <a href="admin_view_staff.jsp" class="btn btn-secondary">View Staff</a>
+            <button type="submit" class="btn btn-primary">Add Menu</button>
+            <a href="manage_menu.jsp" class="btn btn-secondary">Manage Menu</a>
         </form>
-    </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <c:if test="${not empty message}">
+            <div class="alert alert-info mt-3">
+                ${message}
+            </div>
+        </c:if>
+    </div>
 </body>
 </html>

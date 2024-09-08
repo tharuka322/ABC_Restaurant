@@ -1,12 +1,12 @@
 <%@ page import="java.util.List" %>
-<%@ page import="admin.Staff" %>
+<%@ page import="admin.Menu" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Staff</title>
+    <title>Manage Menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -69,7 +69,7 @@
 </nav>
 <body>
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Staff Management</h2>
+    <h2 class="text-center mb-4">Manage Menu</h2>
 
     <!-- Display Error Message -->
     <% 
@@ -80,40 +80,38 @@
     <% } %>
 
     <!-- Search Form -->
-    <form method="get" action="AdminStaffviewServlet">
+    <form method="get" action="ManageMenuServlet">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" name="search" placeholder="Search staff" value="<%= request.getParameter("search") %>">
+            <input type="text" class="form-control" name="search" placeholder="Search menu" value="<%= request.getParameter("search") %>">
             <button class="btn btn-primary" type="submit">Search</button>
         </div>
     </form>
 
-    <!-- Staff Table -->
+    <!-- Menu Table -->
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Phone</th>
+                <th>ID</th>
                 <th>Name</th>
-                <th>Role</th>
+                <th>Price</th>
+                <th>Category</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             <% 
-            List<Staff> staffList = (List<Staff>) request.getAttribute("staffList");
-            if (staffList != null) {
-                for (Staff staff : staffList) {
+            List<Menu> menuList = (List<Menu>) request.getAttribute("menuList");
+            if (menuList != null) {
+                for (Menu menu : menuList) {
             %>
             <tr>
-                <td><%= staff.getUsername() %></td>
-                <td><%= staff.getPassword() %></td>
-                <td><%= staff.getPhone() %></td>
-                <td><%= staff.getName() %></td>
-                <td><%= staff.getRole() %></td>
+                <td><%= menu.getId() %></td>
+                <td><%= menu.getName() %></td>
+                <td><%= menu.getPrice() %></td>
+                <td><%= menu.getCategory() %></td>
                 <td>
-                    <a href="AdminStaffviewServlet?action=delete&username=<%= staff.getUsername() %>" class="btn btn-danger btn-sm">Delete</a>
-                    <a href="update_staff.jsp?username=<%= staff.getUsername() %>" class="btn btn-primary btn-sm">Update</a>
+                    <a href="ManageMenuServlet?action=edit&id=<%= menu.getId() %>" class="btn btn-info btn-sm">Edit</a>
+                    <a href="ManageMenuServlet?action=delete&id=<%= menu.getId() %>" class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
             <% 
@@ -121,13 +119,16 @@
             } else {
             %>
             <tr>
-                <td colspan="6" class="text-center">No staff found</td>
+                <td colspan="5" class="text-center">No menu items found</td>
             </tr>
             <% 
             }
             %>
         </tbody>
     </table>
+
+    <!-- Add New Menu Item Button -->
+    <a href="add_menu.jsp" class="btn btn-secondary mt-3">Add New Menu Item</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
