@@ -44,7 +44,7 @@
                     <a class="nav-link" href="add_menu.jsp">Menu</a>
                 </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="view_booking.jsp">Booking</a>
+                    <a class="nav-link" href="ViewBooking.jsp">Booking</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin_faq.jsp">FAQ</a>
@@ -57,7 +57,6 @@
     </div>
 </nav>
 
-<!-- Content -->
 <div class="container mt-5">
     <h1>Welcome, Admin</h1>
     <p>You have successfully logged in as an admin.</p>
