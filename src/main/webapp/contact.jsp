@@ -48,7 +48,7 @@
                     <a href="menu.jsp" class="nav-item nav-link">Menu</a>
                     <a href="login.jsp" class="nav-item nav-link">Booking</a>
                     <a href="contact.jsp" class="nav-item nav-link">Contact</a>
-                    <a href="admin_login.jsp" class="nav-item nav-link">Sign In</a>
+                    <a href="login.jsp" class="nav-item nav-link">Sign In</a>
                 </div>
             </div>
         </nav>
@@ -107,9 +107,18 @@
                         <p><i class="fas fa-map-marker-alt me-2"></i>543, Colombo Road, Kurunegala, Srilanka</p>
                         <p><i class="fas fa-phone-alt me-2"></i>0751324352</p>
                         <p><i class="fas fa-envelope me-2"></i>info@abcrestaurantku.com</p>
-                        <div class="map-container mt-4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.511158460531!2d-122.41941568468164!3d37.77492927975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581c6d7e1a44b%3A0x4f9c3fcb5f4e485b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1632268804013!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>543, Colombo Road, kandy, Srilanka</p>
+                        <p><i class="fas fa-phone-alt me-2"></i>0751324352</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@abcrestaurantky.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>543, kegalla Road, rathnapura, Srilanka</p>
+                        <p><i class="fas fa-phone-alt me-2"></i>0751324352</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@abcrestaurantka.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>543, kandy Road, mathale, Srilanka</p>
+                        <p><i class="fas fa-phone-alt me-2"></i>0751324352</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@abcrestaurantma.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>543, galle Road, colombo, Srilanka</p>
+                        <p><i class="fas fa-phone-alt me-2"></i>0751324352</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@abcrestaurantco.com</p>
                     </div>
                 </div>
             </div>

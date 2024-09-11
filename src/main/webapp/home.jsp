@@ -70,7 +70,7 @@
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h1 class="mb-5">Our Services</h1>
+        <h1 class="mb-5">Our Services and Facilities</h1>
     </div>
 
     <div class="container">
@@ -100,8 +100,8 @@
                     <div class="p-4 text-center">
                         <img src="images/online order.png" alt="Service Image" class="img-fluid mb-3" style="max-height: 100px;">
                         <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                        <h5>Online Order</h5>
-                        <p>Enjoy a seamless online ordering experience at ABC Restaurant with quick delivery and delicious meals.</p>
+                        <h5>Online Table Booking</h5>
+                        <p>Enjoy a seamless online table Booking experience at ABC Restaurant.</p>
                     </div>
                 </div>
             </div>
@@ -112,6 +112,27 @@
                         <i class="fa fa-3x fa-headset text-primary mb-4"></i>
                         <h5>24/7 Service</h5>
                         <p>Our restaurant offers exceptional 24/7 service, ensuring delicious meals anytime, day or night</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3 h-100" style="background-color: #f8f9fa;">
+                    <div class="p-4 text-center">
+                        <img src="images/wifi.png" alt="Service Image" class="img-fluid mb-3" style="max-height: 100px;">
+                        <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                        <h5>Free Wifi</h5>
+                        <p>Our Free wifi Zone is always open for our valueble customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded pt-3 h-100" style="background-color: #e9ecef;">
+                    <div class="p-4 text-center">
+                        <img src="images/pool.png" alt="Service Image" class="img-fluid mb-3" style="max-height: 100px;">
+                        <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                        <h5>Pool Access</h5>
+                        <p>You can access our swimming pool unlimited. </p>
                     </div>
                 </div>
             </div>
@@ -151,91 +172,83 @@
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="gallery-item rounded overflow-hidden shadow">
-                    <img class="img-fluid" src="images/gallery1.jpg" alt="Gallery Image 1">
+                    <img class="img-fluid" src="images/gal2.webp" alt="Gallery Image 1">
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="gallery-item rounded overflow-hidden shadow">
-                    <img class="img-fluid" src="images/gallery2.jpg" alt="Gallery Image 2">
+                    <img class="img-fluid" src="images/gal2.webp" alt="Gallery Image 2">
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="gallery-item rounded overflow-hidden shadow">
-                    <img class="img-fluid" src="images/gallery3.jpg" alt="Gallery Image 3">
+                    <img class="img-fluid" src="images/gal2.webp" alt="Gallery Image 3">
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="gallery-item rounded overflow-hidden shadow">
-                    <img class="img-fluid" src="images/gallery4.jpg" alt="Gallery Image 4">
+                    <img class="img-fluid" src="images/gal2.webp" alt="Gallery Image 4">
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
                 <div class="gallery-item rounded overflow-hidden shadow">
-                    <img class="img-fluid" src="images/gallery5.jpg" alt="Gallery Image 5">
+                    <img class="img-fluid" src="images/gal2.webp" alt="Gallery Image 5">
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
                 <div class="gallery-item rounded overflow-hidden shadow">
-                    <img class="img-fluid" src="images/gallery6.jpg" alt="Gallery Image 6">
+                    <img class="img-fluid" src="images/gal2.webp" alt="Gallery Image 6">
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Gallery End -->
-
-
-        
-       <!-- Footer -->
-<footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-            <!-- About Section -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABC Restaurant</h5>
-                <p>Experience the best dining at ABC Restaurant, and taste a unique blend of traditional and contemporary dishes to suit your taste.</p>
+ </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <!-- About Section -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">ABC Restaurant</h5>
+                    <p>Experience the best dining at ABC Restaurant, and taste a unique blend of traditional and contemporary dishes to suit your taste.</p>
+                </div>
+                <!-- Links Section -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                    <p><a href="home.jsp" class="text-white" style="text-decoration: none;">Home</a></p>
+                    <p><a href="about.jsp" class="text-white" style="text-decoration: none;">About Us</a></p>
+                    <p><a href="gallery.jsp" class="text-white" style="text-decoration: none;">Gallery</a></p>
+                    <p><a href="contact.jsp" class="text-white" style="text-decoration: none;">Contact</a></p>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="fas fa-home me-3"></i> 543, Colombo Road, Kurunegala, Srilanka</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@abcrestaurantku.com</p>
+                    <p><i class="fas fa-phone me-3"></i> 0373423453</p>
+                    <p><i class="fas fa-print me-3"></i> 0374534657</p>
+                </div>
+                <!-- Social Section -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Follow Us</h5>
+                    <a href="#"><img src="images/Social Media Icons.png" alt="Social Media" class="mr-4" style="width: 240px;"></a>
+                </div>
             </div>
-
-            <!-- Links Section -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
-                <p><a href="#" class="text-white" style="text-decoration: none;">Home</a></p>
-                <p><a href="#" class="text-white" style="text-decoration: none;">About Us</a></p>
-                <p><a href="#" class="text-white" style="text-decoration: none;">Gallery</a></p>
-                <p><a href="#" class="text-white" style="text-decoration: none;">Contact</a></p>
-            </div>
-
-            <!-- Contact Section -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
-                <p><i class="fas fa-home mr-3"></i> 543, Colombo Road, Kurunegala, Srilanka</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@abcrestaurantku.com</p>
-                <p><i class="fas fa-phone mr-3"></i> 0373423453</p>
-                <p><i class="fas fa-print mr-3"></i> 0374534657</p>
-            </div>
-
-            <!-- Social Section -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Follow Us</h5>
-                <a href="#"><img src="images/Social Media Icons.png" alt="Facebook" class="mr-4" style="width: 240px;"></a>
-            
-            </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="row d-flex justify-content-center mt-3">
-            <div class="col-md-8 col-lg-8">
-                <p class="text-center text-white">
-                    © 2024 ABC Restaurant. All rights reserved.
-                </p>
+            <!-- Copyright -->
+            <div class="row d-flex justify-content-center mt-3">
+                <div class="col-md-8 col-lg-8">
+                    <p class="text-center text-white">
+                        © 2024 ABC Restaurant. All rights reserved.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
