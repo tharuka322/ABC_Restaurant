@@ -1,10 +1,13 @@
 package faqs;
 
+import java.sql.Timestamp;
+
 public class FAQ {
     private String name;
     private String email;
     private String phone;
     private String message;
+    
 
     // Constructor
     public FAQ(String name, String email, String phone, String message) {

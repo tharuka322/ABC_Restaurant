@@ -44,7 +44,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="adminhome.jsp">Home</a>
                 </li>
@@ -55,13 +55,13 @@
                     <a class="nav-link" href="add_menu.jsp">Menu</a>
                 </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="view_booking.jsp">Booking</a>
+                    <a class="nav-link" href="ViewBooking.jsp">Booking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin_faq.jsp">FAQ</a>
+                    <a class="nav-link" href="FAQView.jsp">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-danger" href="admin_logout.jsp">Logout</a>
+                    <a class="nav-link btn btn-danger" href="home.jsp">Logout</a>
                 </li>
             </ul>
         </div>

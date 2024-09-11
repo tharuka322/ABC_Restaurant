@@ -13,7 +13,7 @@
             text-align: center;
         }
     </style>
-    <meta http-equiv="refresh" content="2;url=booking.jsp">
+    <meta http-equiv="refresh" content="4;url=booking.jsp">
 </head>
 <body>
   
